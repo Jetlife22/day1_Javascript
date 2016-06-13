@@ -1,16 +1,28 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <script>
-        window.alert("Hello World");
-    </script>
-
 </head>
 
 <body>
+
+<!-- span tag where id set to demo-->
+<span id= "demo"></span>    
     
-<h1>Javascript - Hello world</h1>
+
+<script>
+//everything in the script uses Javascript
+//Listen for the load event of the DOM 
+window.addEventListener('load',myfirst,false);
     
+function myfirst(){
+window.alert("Hello World using an event listener");
+
+//write to the webpage where id=demo
+document.getElementById("demo").innerHTML = "Hello World";
+}
+
+
+</script>
     
 </body>
 
